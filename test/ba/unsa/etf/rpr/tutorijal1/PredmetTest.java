@@ -13,16 +13,16 @@ public class PredmetTest {
         assertEquals(100, p.getMaksimalanBrojStudenata());
     }
 
-    @org.junit.jupiter.api.Test
+    /*@org.junit.jupiter.api.Test
     void upisi() {
         Student s = new Student();
         Predmet p = new Predmet();
         s.postavi("Perica", "Peric", 11111);
         p.upisi(s);
         // assertEquals(1, p.getTrenutniBrojStudenata());
-    }
+    }*/
 
-    @org.junit.jupiter.api.Test
+   /* @org.junit.jupiter.api.Test
     void ispisani() {
         Student s1 = new Student();
         Student s2 = new Student();
@@ -33,7 +33,7 @@ public class PredmetTest {
         p.upisi(s2);
         p.ispisani(s1);
         // assertEquals(1,p.getTrenutniBrojStudenata());
-    }
+    }*/
 
     @org.junit.jupiter.api.Test
     void getNazivPredmeta() {

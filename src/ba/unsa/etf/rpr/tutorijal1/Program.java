@@ -1,19 +1,17 @@
 package ba.unsa.etf.rpr.tutorijal1;
 
-import java.util.*;
-
 class Student {
-    static String imeStudenta, prezimeStudenta;
-    static int brojIndeksaStudenta;
+    String imeStudenta, prezimeStudenta;
+    int brojIndeksaStudenta;
     Student() {}
     Student(String imeStudentaKojegUnosimo, String prezimeStudentaKojegUnosimo, int brojIndeksaStudentaKojegUnosimo) {
         postavi(imeStudentaKojegUnosimo, prezimeStudentaKojegUnosimo, brojIndeksaStudentaKojegUnosimo);
     }
 
     void postavi(String imeStudentaKojegUnosimo, String prezimeStudentaKojegUnosimo, int brojIndeksaStudentaKojegUnosimo) {
-        Student.imeStudenta = imeStudentaKojegUnosimo;
-        Student.prezimeStudenta = prezimeStudentaKojegUnosimo;
-        Student.brojIndeksaStudenta = brojIndeksaStudentaKojegUnosimo;
+        this.imeStudenta = imeStudentaKojegUnosimo;
+        Student.this.prezimeStudenta = prezimeStudentaKojegUnosimo;
+        Student.this.brojIndeksaStudenta = brojIndeksaStudentaKojegUnosimo;
     }
 
     void obrisiStudenta() {
@@ -22,28 +20,28 @@ class Student {
         brojIndeksaStudenta = 0;
     }
 
-    public static String getImeStudenta() {
+    public String getImeStudenta() {
         return imeStudenta;
     }
 
-    public static void setImeStudenta(String imeStudenta) {
-        Student.imeStudenta = imeStudenta;
+    public void setImeStudenta(String imeStudenta) {
+        Student.this.imeStudenta = imeStudenta;
     }
 
-    public static String getPrezimeStudenta() {
+    public String getPrezimeStudenta() {
         return prezimeStudenta;
     }
 
-    public static void setPrezimeStudenta(String prezimeStudenta) {
-        Student.prezimeStudenta = prezimeStudenta;
+    public void setPrezimeStudenta(String prezimeStudenta) {
+        Student.this.prezimeStudenta = prezimeStudenta;
     }
 
-    public static int getBrojIndeksaStudenta() {
+    public int getBrojIndeksaStudenta() {
         return brojIndeksaStudenta;
     }
 
-    public static void setBrojIndeksaStudenta(int brojIndeksaStudenta) {
-        Student.brojIndeksaStudenta = brojIndeksaStudenta;
+    public void setBrojIndeksaStudenta(int brojIndeksaStudenta) {
+        Student.this.brojIndeksaStudenta = brojIndeksaStudenta;
     }
 
 
@@ -54,8 +52,8 @@ class Student {
 };
 
 class Predmet {
-    static String nazivPredmeta, sifraPredmeta;
-    static int maksimalanBrojStudenata;
+    String nazivPredmeta, sifraPredmeta;
+    int maksimalanBrojStudenata;
     static private Student[] nizStudenata;
     private int trenutniBrojStudenataNaPredmetu;
 
@@ -66,9 +64,9 @@ class Predmet {
     }
 
     void postavi(String nazivPredmetaKojiUnosimo, String sifraPredmetaKojiUnosimo, int maksimalanBrojStudenataNaPredmetu) {
-        Predmet.nazivPredmeta = nazivPredmetaKojiUnosimo;
-        Predmet.sifraPredmeta = sifraPredmetaKojiUnosimo;
-        Predmet.maksimalanBrojStudenata = maksimalanBrojStudenataNaPredmetu;
+        Predmet.this.nazivPredmeta = nazivPredmetaKojiUnosimo;
+        Predmet.this.sifraPredmeta = sifraPredmetaKojiUnosimo;
+        Predmet.this.maksimalanBrojStudenata = maksimalanBrojStudenataNaPredmetu;
     }
 
     void upisi(Student noviStudent) {
